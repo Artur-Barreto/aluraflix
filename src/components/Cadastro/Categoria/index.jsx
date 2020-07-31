@@ -18,12 +18,12 @@ function CadastroCategoria() {
       ...values,
       [chave]: valor,
     });
-  }
+  };
 
   function handleChange(infosDoEvento) {
     const { getAttribute, value } = infosDoEvento.target;
     setValue(getAttribute("name"), value);
-  }
+  };
 
   return (
     <PageDefault>
@@ -49,7 +49,7 @@ function CadastroCategoria() {
       <ul>
         {categorias.map((categorias, indice) => {
           return <li key={`${categorias}${indice}`}>{categorias.nome}</li>;
-        })}
+        })};
       </ul>
 
       <Link to="/">Ir para home</Link>
