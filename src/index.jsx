@@ -9,7 +9,17 @@ import CadastroCategoria from './components/Cadastro/Categoria/index';
 
 
 
-const Pagina404 = () => (<div>Pagina404</div>)
+const Pagina404 = () => (
+  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+    <h1>Ops, quebrou tudo :O</h1>
+ 
+    <iframe
+      title="Flappy Bird Game"
+      src="https://mariosouto.com/flappy-bird-devsoutinho/"
+      width="340"
+      height="600" />
+  </div>
+)
 
 ReactDOM.render(
 

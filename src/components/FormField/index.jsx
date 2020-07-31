@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
-// import { Container } from './styles';
-
 const FormFieldWrapper = styled.div`
   position: relative;
   textarea {
@@ -97,8 +95,8 @@ function FormField({
 }
 
 FormField.defaultProps = {
-  type: 'text',
-  value: '',
+  type: 'text',
+  value: ' ',
 };
 
 FormField.propTypes = {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import PageDefault from "../../../pages/PageDefault";
 import { Link } from "react-router-dom";
 import FormField from '../../FormField/index';
+import Button from '../../Button/index';
 
 
 function CadastroCategoria() {
@@ -32,7 +33,7 @@ function CadastroCategoria() {
 
   useEffect(() => {
     if (window.location.href.includes('localhost')) {
-      const URL = 'http://localhost:8080/categorias';
+      const URL = 'http://localhost:8080/categoria';
       fetch(URL)
         .then(async (respostaDoServer) => {
           if (respostaDoServer.ok) {
@@ -110,9 +111,9 @@ function CadastroCategoria() {
           </label>
         </div> */}
 
-        <button type="submit">
+        <Button type="submit">
           Cadastrar
-        </button>
+        </Button>
       </form>
 
       <ul>
